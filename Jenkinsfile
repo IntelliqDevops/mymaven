@@ -21,7 +21,7 @@ pipeline
         {
             steps
             {
-                deploy adapters: [tomcat9(credentialsId: '1ce04ef7-c3a8-44e7-ad81-e6dd8e400a1f', path: '', url: 'http://172.31.81.211:8080')], contextPath: 'mytestapp', war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: '1ce04ef7-c3a8-44e7-ad81-e6dd8e400a1f', path: '', url: 'http://172.31.81.211:8080')], contextPath: 'newtestapp', war: '**/*.war'
             }
         }
         stage('ContTesting')
